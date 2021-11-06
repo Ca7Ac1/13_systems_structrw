@@ -1,13 +1,8 @@
 #ifndef INTERACT_H
 #define INTERACT_H
 
-const char *data_path= "Census_Data.data";
+#include "constants.h"
 
-typedef struct pop_entry
-{
-	int year;
-	int population;
-	char boro[15];
-} pop_entry;
+pop_entry *read_data();
 
 #endif

@@ -7,6 +7,7 @@
 
 #include "csv.h"
 #include "interact.h"
+#include "constants.h"
 
 void read_csv()
 {
@@ -76,7 +77,9 @@ void read_csv()
 			curr.population = pop;
 			strcpy(curr.boro, boros[index - 1]);
 
-			write(write_file, &curr, sizeof(curr));
+			printf("%s\n", curr.boro);
+
+			write(write_file, &curr, sizeof(pop_entry));
 		}
 
 		strcpy(split, "");
