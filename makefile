@@ -2,10 +2,10 @@ all: main.o csv.o interact.o
 	gcc -o main main.o csv.o interact.o
 
 main.o: main.c interact.h csv.h
-	gcc -o main.c
+	gcc -c main.c
 
 csv.o: csv.c csv.h
-	gcc -o csv.c
+	gcc -c csv.c
 
 interact.o: interact.c interact.h
-	gcc -o interact.c
+	gcc -c interact.c
