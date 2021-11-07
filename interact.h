@@ -4,5 +4,7 @@
 #include "constants.h"
 
 pop_entry *read_data();
+void add_data();
+void update_data();
 
 #endif

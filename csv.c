@@ -85,4 +85,7 @@ void read_csv()
 		strcpy(split, "");
 		index++;
 	}
+
+	close(read_file);
+	close(write_file);
 }
