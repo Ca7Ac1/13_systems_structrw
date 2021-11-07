@@ -77,8 +77,6 @@ void read_csv()
 			curr.population = pop;
 			strcpy(curr.boro, boros[index - 1]);
 
-			printf("%s\n", curr.boro);
-
 			write(write_file, &curr, sizeof(pop_entry));
 		}
 
